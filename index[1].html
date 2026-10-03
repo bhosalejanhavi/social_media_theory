@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Social Media Theory — beginner-friendly digital marketing, social media, content, AI and creator resources." />
+  <title>Social Media Theory — Make the internet make sense.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Social Media Theory home">
+      <span class="logo">S<span>•</span></span>
+      <span>Social Media Theory</span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+      <a href="#learn">Learn</a>
+      <a href="#topics">Topics</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">✦ THE BEGINNER'S FIELD GUIDE</div>
+        <h1>Make the internet<br><span>make sense.</span></h1>
+        <p class="lead">Social Media Theory makes digital marketing easy to understand for beginners, creators, students, and small businesses.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#learn">Start learning free <span>→</span></a>
+          <a class="btn instagram" href="https://www.instagram.com/" target="_blank" rel="noopener">◎ Instagram hub</a>
+        </div>
+        <div class="micro">
+          <span>✦</span><span>●</span><span>●</span>
+          <p>Bite-sized, zero gatekeeping.<br><strong>Learn one useful idea at a time.</strong></p>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-label">TODAY'S QUICK LESSON</div>
+        <div class="big-number">01</div>
+        <h3>What makes a Reel work?</h3>
+        <p>Hook attention quickly, deliver one clear idea, and make the viewer want to keep watching or share.</p>
+        <a href="#lesson" class="text-link">Read the lesson →</a>
+      </div>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">START HERE</div>
+          <h2>Learn without the jargon.</h2>
+        </div>
+        <p>Pick a topic and build your digital marketing knowledge one practical concept at a time.</p>
+      </div>
+      <div class="topic-grid" id="topics">
+        <article class="topic-card"><span>01</span><h3>Instagram Marketing</h3><p>Profiles, reach, engagement, Reels, Stories and growth basics.</p><button onclick="openLesson('Instagram Marketing','A strong Instagram profile clearly tells people who you help, what you share and why they should follow. Start with a useful bio, recognizable visual identity and consistent content pillars.')">Learn →</button></article>
+        <article class="topic-card"><span>02</span><h3>Content Strategy</h3><p>Turn random posting into a repeatable content system.</p><button onclick="openLesson('Content Strategy','Choose 3–5 content pillars, define your audience and give every post a purpose: educate, entertain, inspire, build trust or convert.')">Learn →</button></article>
+        <article class="topic-card"><span>03</span><h3>Reels & Creation</h3><p>Hooks, scripts, filming ideas, captions and storytelling.</p><button onclick="openLesson('Reels & Content Creation','A simple Reel structure is Hook → Value → Payoff → Call to action. Keep the first seconds clear and make the viewer understand the topic immediately.')">Learn →</button></article>
+        <article class="topic-card"><span>04</span><h3>SEO</h3><p>Help people discover your content through search.</p><button onclick="openLesson('SEO','SEO starts with understanding what people search for. Use relevant phrases naturally in titles, headings, descriptions and useful content.')">Learn →</button></article>
+        <article class="topic-card"><span>05</span><h3>Analytics</h3><p>Understand views, watch time, saves, shares and conversion.</p><button onclick="openLesson('Analytics','Do not look at one metric alone. Compare reach with engagement, retention and actions such as profile visits, clicks, saves or shares.')">Learn →</button></article>
+        <article class="topic-card"><span>06</span><h3>Digital Advertising</h3><p>Learn the basics of audiences, creatives, objectives and budgets.</p><button onclick="openLesson('Digital Advertising','Start with one clear campaign objective and one audience hypothesis. Test creative variations and use results to improve the next version.')">Learn →</button></article>
+        <article class="topic-card"><span>07</span><h3>AI for Marketing</h3><p>Use AI for ideas, research, drafts and faster workflows.</p><button onclick="openLesson('AI for Marketing','AI can help brainstorm hooks, repurpose ideas, organize research and draft content. Always review outputs for accuracy, originality and brand voice.')">Learn →</button></article>
+        <article class="topic-card"><span>08</span><h3>Trends</h3><p>Spot trends without copying everyone else.</p><button onclick="openLesson('Social Media Trends','A trend is useful when it fits your audience and message. Borrow the format or idea, then add your own angle rather than copying another creator.')">Learn →</button></article>
+        <article class="topic-card"><span>09</span><h3>Marketing Career</h3><p>Skills, portfolio projects and beginner career paths.</p><button onclick="openLesson('Digital Marketing Career','Build proof of skill through small projects: content calendars, campaign mockups, analytics reports, social audits and your own creator page.')">Learn →</button></article>
+        <article class="topic-card"><span>10</span><h3>Marketing Tools</h3><p>Practical tools for design, planning, analytics and creation.</p><button onclick="openLesson('Marketing Tools','Start with a small stack. Canva can support design, spreadsheets can support planning and reporting, and platform analytics can support performance decisions.')">Learn →</button></article>
+      </div>
+    </section>
+
+    <section id="lesson" class="lesson">
+      <div class="lesson-number">02</div>
+      <div>
+        <div class="eyebrow">QUICK THEORY</div>
+        <h2>Don't chase the algorithm.<br>Understand the audience.</h2>
+        <p>Good marketing starts with a person, not a platform. Ask: <strong>Who is this for?</strong> What do they need? What would make them stop, care, save or share?</p>
+        <div class="checklist">
+          <div>✓ One clear audience</div>
+          <div>✓ One useful idea</div>
+          <div>✓ One strong hook</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section tools">
+      <div class="eyebrow">YOUR STARTER KIT</div>
+      <h2>Build skills, not just a feed.</h2>
+      <div class="tool-grid">
+        <div><strong>✦ Canva</strong><span>Design & visual content</span></div>
+        <div><strong>▣ Analytics</strong><span>Measure what works</span></div>
+        <div><strong>◌ AI tools</strong><span>Research & ideation</span></div>
+        <div><strong>▤ Sheets</strong><span>Plan & report</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <div class="eyebrow">ABOUT THE PAGE</div>
+        <h2>Digital marketing,<br>without the confusion.</h2>
+      </div>
+      <p>Social Media Theory is a beginner-friendly knowledge hub for creators, students and small businesses who want practical digital marketing skills without complicated jargon.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="logo">S<span>•</span></span><span>Social Media Theory</span></div>
+    <p>Make the internet make sense.</p>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+  </footer>
+
+  <div class="modal" id="lessonModal" onclick="closeLesson(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="close" onclick="closeLesson()">×</button>
+      <div class="eyebrow">MINI LESSON</div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+      <button class="btn primary" onclick="closeLesson()">Got it ✓</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
